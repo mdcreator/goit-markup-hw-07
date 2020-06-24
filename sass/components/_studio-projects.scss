@@ -1,0 +1,57 @@
+.projects {
+  @extend %container;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &-title {
+    margin-top: 0px;
+    margin-bottom: 50px;
+
+    color: $title-text-color;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+}
+
+.project {
+  &-list {
+    @extend %list;
+    display: flex;
+  }
+
+  &-item {
+    position: relative;
+    width: 370px;
+  }
+}
+
+img {
+  display: block;
+}
+.project-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.project-item .title {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  height: 70px;
+
+  color: $color;
+  background-color: $bg-overlay;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
