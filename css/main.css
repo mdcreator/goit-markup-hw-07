@@ -439,8 +439,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(55, 64, 161, 0.8);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(/images/header.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(/images/header.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/header.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/header.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1238,15 +1238,7 @@ img {
   position: absolute;
 }
 
-.checkbox:checked + .icon-check {
-  background-color: #2196f3;
-  background-image: url(../images/check.svg);
-  border-color: transparent;
-  background-size: contain;
-  background-origin: border-box;
-}
-
-.check-.icon {
+.checkbox .check-.icon {
   display: inline-block;
   position: absolute;
   top: 3px;
@@ -1263,6 +1255,18 @@ img {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.checkbox:checked + .check-icon {
+  background-color: #2196f3;
+  background-image: url(../images/check.svg);
+  border-color: transparent;
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.checkbox:hover + .icon-check {
+  border-color: #2196f3;
+}
+
 .agreement {
   display: inline-block;
   margin-bottom: 30px;
@@ -1276,6 +1280,29 @@ img {
 }
 
 .agreement-link {
+  color: #2196f3;
+}
+
+.form-submit {
+  display: block;
+  margin: auto;
+  padding: 0;
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #2196f3;
+  color: #ffffff;
+  -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-submit:hover {
+  background-color: #ffffff;
   color: #2196f3;
 }
 /*# sourceMappingURL=main.css.map */
