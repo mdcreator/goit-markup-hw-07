@@ -1231,6 +1231,22 @@ img {
   text-align: center;
 }
 
+.agreement {
+  display: inline-block;
+  margin-bottom: 30px;
+  padding-left: 30px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.agreement-link {
+  color: #2196f3;
+}
+
 .checkbox {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1238,7 +1254,7 @@ img {
   position: absolute;
 }
 
-.checkbox .check-.icon {
+.check-icon {
   display: inline-block;
   position: absolute;
   top: 3px;
@@ -1263,24 +1279,8 @@ img {
   background-origin: border-box;
 }
 
-.checkbox:hover + .icon-check {
+.checkbox:hover + .check-icon {
   border-color: #2196f3;
-}
-
-.agreement {
-  display: inline-block;
-  margin-bottom: 30px;
-  padding-left: 30px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
-.agreement-link {
-  color: #2196f3;
 }
 
 .form-submit {

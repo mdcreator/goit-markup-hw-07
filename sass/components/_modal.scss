@@ -162,41 +162,6 @@
   text-align: center;
 }
 
-.checkbox {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: absolute;
-
-  .check-.icon {
-    display: inline-block;
-    position: absolute;
-    top: 3px;
-    margin-left: -30px;
-
-    width: 16px;
-    height: 15px;
-    border-radius: 2px;
-
-    border: 2px solid $title-text-color;
-    box-sizing: border-box;
-    box-shadow: $shadow;
-    transition: $transition;
-  }
-
-  &:checked + .check-icon {
-    background-color: $accent-color;
-    background-image: url(../images/check.svg);
-    border-color: transparent;
-    background-size: contain;
-    background-origin: border-box;
-  }
-
-  &:hover + .icon-check {
-    border-color: $accent-color;
-  }
-}
-
 .agreement {
   display: inline-block;
   margin-bottom: 30px;
@@ -212,6 +177,41 @@
 
   &-link {
     color: $accent-color;
+  }
+}
+
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.check-icon {
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  margin-left: -30px;
+
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+
+  border: 2px solid $title-text-color;
+  box-sizing: border-box;
+  box-shadow: $shadow;
+  transition: $transition;
+
+  .checkbox:checked + & {
+    background-color: $accent-color;
+    background-image: url(../images/check.svg);
+    border-color: transparent;
+    background-size: contain;
+    background-origin: border-box;
+  }
+
+  .checkbox:hover + & {
+    border-color: $accent-color;
   }
 }
 
