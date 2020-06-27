@@ -9,7 +9,7 @@
   text-decoration: none;
 }
 
-.page-header .container, .feature, .projects, .team, .clients, .footer, .portfolio {
+.page-header .container, .feature, .projects, .team-title, .clients, .footer, .portfolio {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -612,6 +612,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .team-card {
@@ -623,6 +626,7 @@ img {
 
 .team-pic {
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .team-card:not(:last-child) {
